@@ -26,21 +26,132 @@ public class TelaCadastro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        nomedigitar = new javax.swing.JTextField();
+        cpfdigitar = new javax.swing.JFormattedTextField();
+        datadenascimento2 = new javax.swing.JFormattedTextField();
+        sexoescolher = new javax.swing.JComboBox<>();
+        escolherfuncao = new javax.swing.JComboBox<>();
+        senhadigitar = new javax.swing.JTextField();
+        nomecompleto = new javax.swing.JLabel();
+        cpf = new javax.swing.JLabel();
+        datadenascimento = new javax.swing.JLabel();
+        sexo = new javax.swing.JLabel();
+        funcao = new javax.swing.JLabel();
+        email = new javax.swing.JLabel();
+        senha = new javax.swing.JLabel();
+        cadastro = new javax.swing.JLabel();
+        emaildigitar = new javax.swing.JTextField();
+        cadastrar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(nomedigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 104, 360, -1));
+
+        try {
+            cpfdigitar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        cpfdigitar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cpfdigitarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cpfdigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 144, 100, -1));
+
+        try {
+            datadenascimento2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel1.add(datadenascimento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 184, 80, -1));
+
+        sexoescolher.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Feminino", "Masculino", "Outro" }));
+        jPanel1.add(sexoescolher, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 184, -1, -1));
+
+        escolherfuncao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Secretário", "Lider", "Vice-lider", "Tesoureiro" }));
+        jPanel1.add(escolherfuncao, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 234, -1, -1));
+        jPanel1.add(senhadigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 220, -1));
+
+        nomecompleto.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        nomecompleto.setText("Nome Completo:");
+        jPanel1.add(nomecompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 107, -1, -1));
+
+        cpf.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        cpf.setText("CPF:");
+        jPanel1.add(cpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 147, -1, -1));
+
+        datadenascimento.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        datadenascimento.setText("Data de nascimento:");
+        jPanel1.add(datadenascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 187, -1, -1));
+
+        sexo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sexo.setText("Sexo:");
+        jPanel1.add(sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 187, -1, -1));
+
+        funcao.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        funcao.setText("Função:");
+        jPanel1.add(funcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 237, -1, -1));
+
+        email.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        email.setText("E-mail:");
+        jPanel1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
+
+        senha.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        senha.setText("Criar senha:");
+        jPanel1.add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
+
+        cadastro.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        cadastro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        cadastro.setText("Cadastro");
+        jPanel1.add(cadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 190, 52));
+
+        emaildigitar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emaildigitarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(emaildigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 340, -1));
+
+        cadastrar.setBackground(new java.awt.Color(0, 204, 0));
+        cadastrar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        cadastrar.setForeground(new java.awt.Color(255, 255, 255));
+        cadastrar.setText("Cadastrar");
+        jPanel1.add(cadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\ChatGPT Image 13 de mai. de 2025, 15_54_31.png")); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -10, 820, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void cpfdigitarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpfdigitarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cpfdigitarActionPerformed
+
+    private void emaildigitarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emaildigitarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emaildigitarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +189,23 @@ public class TelaCadastro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cadastrar;
+    private javax.swing.JLabel cadastro;
+    private javax.swing.JLabel cpf;
+    private javax.swing.JFormattedTextField cpfdigitar;
+    private javax.swing.JLabel datadenascimento;
+    private javax.swing.JFormattedTextField datadenascimento2;
+    private javax.swing.JLabel email;
+    private javax.swing.JTextField emaildigitar;
+    private javax.swing.JComboBox<String> escolherfuncao;
+    private javax.swing.JLabel funcao;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel nomecompleto;
+    private javax.swing.JTextField nomedigitar;
+    private javax.swing.JLabel senha;
+    private javax.swing.JTextField senhadigitar;
+    private javax.swing.JLabel sexo;
+    private javax.swing.JComboBox<String> sexoescolher;
     // End of variables declaration//GEN-END:variables
 }
