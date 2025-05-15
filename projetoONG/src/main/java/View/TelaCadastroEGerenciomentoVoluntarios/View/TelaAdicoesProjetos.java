@@ -145,7 +145,7 @@ public class TelaAdicoesProjetos extends javax.swing.JFrame {
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        botaoAnexar.setText("Anaxar");
+        botaoAnexar.setText("Anexar");
         botaoAnexar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoAnexarActionPerformed(evt);
