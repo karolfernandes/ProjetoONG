@@ -63,6 +63,11 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
 
         botaoAcesso.setBackground(new java.awt.Color(0, 102, 0));
         botaoAcesso.setText("Acessar");
+        botaoAcesso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoAcessoActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 10)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
@@ -149,6 +154,11 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
     private void barraEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_barraEmailActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_barraEmailActionPerformed
+
+    private void botaoAcessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAcessoActionPerformed
+        // TODO add your handling code here:
+        TelaHome
+    }//GEN-LAST:event_botaoAcessoActionPerformed
 
     /**
      * @param args the command line arguments
