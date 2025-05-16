@@ -4,6 +4,8 @@
  */
 package View;
 
+import Model.FuncionarioModel;
+
 /**
  *
  * @author ALUNO
@@ -49,6 +51,12 @@ public class TelaCadastro extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        nomedigitar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomedigitarActionPerformed(evt);
+            }
+        });
         jPanel1.add(nomedigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 104, 360, -1));
 
         try {
@@ -71,9 +79,19 @@ public class TelaCadastro extends javax.swing.JFrame {
         jPanel1.add(datadenascimento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 184, 80, -1));
 
         sexoescolher.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Feminino", "Masculino", "Outro" }));
+        sexoescolher.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sexoescolherActionPerformed(evt);
+            }
+        });
         jPanel1.add(sexoescolher, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 184, -1, -1));
 
         escolherfuncao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Secretário", "Lider", "Vice-lider", "Tesoureiro" }));
+        escolherfuncao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                escolherfuncaoActionPerformed(evt);
+            }
+        });
         jPanel1.add(escolherfuncao, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 234, -1, -1));
         jPanel1.add(senhadigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 220, -1));
 
@@ -121,9 +139,12 @@ public class TelaCadastro extends javax.swing.JFrame {
         cadastrar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         cadastrar.setForeground(new java.awt.Color(255, 255, 255));
         cadastrar.setText("Cadastrar");
+        cadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadastrarActionPerformed(evt);
+            }
+        });
         jPanel1.add(cadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\ChatGPT Image 13 de mai. de 2025, 15_54_31.png")); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -10, 820, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -152,6 +173,43 @@ public class TelaCadastro extends javax.swing.JFrame {
     private void emaildigitarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emaildigitarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_emaildigitarActionPerformed
+
+    private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarActionPerformed
+        // TODO add your handling code here:
+        
+        FuncionarioModel funcionario = new FuncionarioModel();
+        funcionario.setNome(nomedigitar.getText());
+        funcionario.setEmail(emaildigitar.getText());
+        // Capturar dados da ComboBox
+        funcionario.setSexo((String)sexoescolher.getSelectedItem());
+        // Capturar senha
+        funcionario.setSenha(senhadigitar.getText());
+        // Capturar os dados dos campos formatados
+        funcionario.setCpf(cpfdigitar.getText());
+        funcionario.setFuncao((String)escolherfuncao.getSelectedItem());
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_cadastrarActionPerformed
+
+    private void nomedigitarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomedigitarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomedigitarActionPerformed
+
+    private void sexoescolherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sexoescolherActionPerformed
+
+        
+        
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sexoescolherActionPerformed
+
+    private void escolherfuncaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escolherfuncaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_escolherfuncaoActionPerformed
 
     /**
      * @param args the command line arguments
