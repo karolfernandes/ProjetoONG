@@ -12,9 +12,10 @@ public class FuncionarioModel {
    private String nome;
     private String cpf;
     private String dataNascimento;
-   private  String sexo;
+    private  String sexo;
     private String email;
     private String senha;
+    private String funcao;
    
 
     public FuncionarioModel(String nome, String cpf, String dataNascimento, String sexo, String email, String senha) {
@@ -24,6 +25,7 @@ public class FuncionarioModel {
         this.sexo = sexo;
         this.email = email;
         this.senha = senha;
+        this.funcao = funcao;
     }
 
     public FuncionarioModel() {
@@ -76,6 +78,10 @@ public class FuncionarioModel {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public void setFuncao(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
