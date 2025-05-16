@@ -93,6 +93,11 @@ public class TelaHome extends javax.swing.JFrame {
         });
 
         botaoLixeira.setText("Lixeira");
+        botaoLixeira.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoLixeiraActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout painelBotoesLayout = new javax.swing.GroupLayout(painelBotoes);
         painelBotoes.setLayout(painelBotoesLayout);
@@ -194,6 +199,7 @@ dispose();
                
        telaPrincipal.setVisible(true);  
        dispose();
+       
        // TODO add your handling code here:
     }//GEN-LAST:event_botaoProjetosActionPerformed
 
@@ -209,6 +215,13 @@ FuncionariosAtivos telaPrincipal = new FuncionariosAtivos();
 telaPrincipal.setVisible(true);
  dispose();// TODO add your handling code here:
     }//GEN-LAST:event_botaoFuncionariosActionPerformed
+
+    private void botaoLixeiraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLixeiraActionPerformed
+Lixeira telaPrincipal = new Lixeira();
+telaPrincipal.setVisible(true);
+dispose();
+// TODO add your handling code here:
+    }//GEN-LAST:event_botaoLixeiraActionPerformed
 
                 
      
