@@ -122,8 +122,6 @@ public class TelaCadastro extends javax.swing.JFrame {
         cadastrar.setForeground(new java.awt.Color(255, 255, 255));
         cadastrar.setText("Cadastrar");
         jPanel1.add(cadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\ChatGPT Image 13 de mai. de 2025, 15_54_31.png")); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -10, 820, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
