@@ -50,14 +50,12 @@ public class TelaCadastro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         nomedigitar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nomedigitarActionPerformed(evt);
             }
         });
-        jPanel1.add(nomedigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 104, 360, -1));
 
         try {
             cpfdigitar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
@@ -69,14 +67,12 @@ public class TelaCadastro extends javax.swing.JFrame {
                 cpfdigitarActionPerformed(evt);
             }
         });
-        jPanel1.add(cpfdigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 144, 100, -1));
 
         try {
             datadenascimento2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel1.add(datadenascimento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 184, 80, -1));
 
         sexoescolher.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Feminino", "Masculino", "Outro" }));
         sexoescolher.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +80,6 @@ public class TelaCadastro extends javax.swing.JFrame {
                 sexoescolherActionPerformed(evt);
             }
         });
-        jPanel1.add(sexoescolher, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 184, -1, -1));
 
         escolherfuncao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Secretário", "Lider", "Vice-lider", "Tesoureiro" }));
         escolherfuncao.addActionListener(new java.awt.event.ActionListener() {
@@ -92,48 +87,37 @@ public class TelaCadastro extends javax.swing.JFrame {
                 escolherfuncaoActionPerformed(evt);
             }
         });
-        jPanel1.add(escolherfuncao, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 234, -1, -1));
-        jPanel1.add(senhadigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 220, -1));
 
         nomecompleto.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         nomecompleto.setText("Nome Completo:");
-        jPanel1.add(nomecompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 107, -1, -1));
 
         cpf.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         cpf.setText("CPF:");
-        jPanel1.add(cpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 147, -1, -1));
 
         datadenascimento.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         datadenascimento.setText("Data de nascimento:");
-        jPanel1.add(datadenascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 187, -1, -1));
 
         sexo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sexo.setText("Sexo:");
-        jPanel1.add(sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 187, -1, -1));
 
         funcao.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         funcao.setText("Função:");
-        jPanel1.add(funcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 237, -1, -1));
 
         email.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         email.setText("E-mail:");
-        jPanel1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
 
         senha.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         senha.setText("Criar senha:");
-        jPanel1.add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
 
         cadastro.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         cadastro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cadastro.setText("Cadastro");
-        jPanel1.add(cadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 190, 52));
 
         emaildigitar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 emaildigitarActionPerformed(evt);
             }
         });
-        jPanel1.add(emaildigitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 340, -1));
 
         cadastrar.setBackground(new java.awt.Color(0, 204, 0));
         cadastrar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -144,8 +128,104 @@ public class TelaCadastro extends javax.swing.JFrame {
                 cadastrarActionPerformed(evt);
             }
         });
-        jPanel1.add(cadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, -1, -1));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -10, 820, 580));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(147, 147, 147)
+                .addComponent(nomecompleto)
+                .addGap(6, 6, 6)
+                .addComponent(nomedigitar, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(147, 147, 147)
+                .addComponent(cpf)
+                .addGap(6, 6, 6)
+                .addComponent(cpfdigitar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(266, 266, 266)
+                .addComponent(datadenascimento2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(sexo)
+                .addGap(6, 6, 6)
+                .addComponent(sexoescolher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(147, 147, 147)
+                .addComponent(funcao))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(emaildigitar, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(email)))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(220, 220, 220)
+                .addComponent(senhadigitar, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(390, 390, 390)
+                .addComponent(cadastrar))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(senha))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(195, 195, 195)
+                .addComponent(escolherfuncao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(147, 147, 147)
+                .addComponent(datadenascimento))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(350, 350, 350)
+                .addComponent(cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(114, 114, 114)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(nomecompleto))
+                    .addComponent(nomedigitar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(cpf))
+                    .addComponent(cpfdigitar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(datadenascimento2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(sexo))
+                    .addComponent(sexoescolher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addComponent(funcao)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(emaildigitar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(email))
+                .addGap(18, 18, 18)
+                .addComponent(senhadigitar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(88, 88, 88)
+                .addComponent(cadastrar))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(330, 330, 330)
+                .addComponent(senha))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(244, 244, 244)
+                .addComponent(escolherfuncao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(197, 197, 197)
+                .addComponent(datadenascimento))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -157,7 +157,7 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
 
     private void botaoAcessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAcessoActionPerformed
         // TODO add your handling code here:
-        TelaHome
+        
     }//GEN-LAST:event_botaoAcessoActionPerformed
 
     /**

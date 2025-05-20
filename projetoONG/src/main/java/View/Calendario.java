@@ -27,34 +27,34 @@ public class Calendario extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        entrada = new javax.swing.JButton();
+        funcionario = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        relatorio = new javax.swing.JButton();
+        retirada = new javax.swing.JButton();
+        calendario = new javax.swing.JButton();
+        interno = new javax.swing.JButton();
+        projetos = new javax.swing.JButton();
+        lixeira = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 0));
 
-        jButton1.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton1.setText("Entrada de Doações");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        entrada.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        entrada.setText("Entrada de Doações");
+        entrada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                entradaActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton2.setText("Funcionarios Ativos");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        funcionario.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        funcionario.setText("Funcionarios Ativos");
+        funcionario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                funcionarioActionPerformed(evt);
             }
         });
 
@@ -88,28 +88,28 @@ public class Calendario extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton3.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton3.setText("Relatorios");
+        relatorio.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        relatorio.setText("Relatorios");
 
-        jButton4.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton4.setText("Retirada de Doações");
+        retirada.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        retirada.setText("Retirada de Doações");
 
-        jButton5.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton5.setText("Calendario");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        calendario.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        calendario.setText("Calendario");
+        calendario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                calendarioActionPerformed(evt);
             }
         });
 
-        jButton6.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton6.setText("Interno e Externo");
+        interno.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        interno.setText("Interno e Externo");
 
-        jButton7.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton7.setText("Projetos");
+        projetos.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        projetos.setText("Projetos");
 
-        jButton8.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
-        jButton8.setText("Lixeira");
+        lixeira.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
+        lixeira.setText("Lixeira");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -118,14 +118,14 @@ public class Calendario extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(relatorio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(entrada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(retirada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(funcionario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(interno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(projetos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(calendario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lixeira, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -134,21 +134,21 @@ public class Calendario extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jButton5)
+                .addComponent(calendario)
                 .addGap(35, 35, 35)
-                .addComponent(jButton1)
+                .addComponent(entrada)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addComponent(retirada)
                 .addGap(30, 30, 30)
-                .addComponent(jButton2)
+                .addComponent(funcionario)
                 .addGap(29, 29, 29)
-                .addComponent(jButton3)
+                .addComponent(relatorio)
                 .addGap(36, 36, 36)
-                .addComponent(jButton6)
+                .addComponent(interno)
                 .addGap(41, 41, 41)
-                .addComponent(jButton7)
+                .addComponent(projetos)
                 .addGap(28, 28, 28)
-                .addComponent(jButton8)
+                .addComponent(lixeira)
                 .addGap(121, 121, 121))
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -169,17 +169,17 @@ public class Calendario extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void entradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entradaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_entradaActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void funcionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_funcionarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_funcionarioActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void calendarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calendarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_calendarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -220,16 +220,16 @@ public class Calendario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton calendario;
+    private javax.swing.JButton entrada;
+    private javax.swing.JButton funcionario;
+    private javax.swing.JButton interno;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton lixeira;
+    private javax.swing.JButton projetos;
+    private javax.swing.JButton relatorio;
+    private javax.swing.JButton retirada;
     // End of variables declaration//GEN-END:variables
 }
