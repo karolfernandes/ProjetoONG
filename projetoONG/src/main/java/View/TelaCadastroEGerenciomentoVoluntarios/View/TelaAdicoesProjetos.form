@@ -288,7 +288,7 @@
     </Container>
     <Component class="javax.swing.JRadioButton" name="botaoAnexar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Anaxar"/>
+        <Property name="text" type="java.lang.String" value="Anexar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoAnexarActionPerformed"/>

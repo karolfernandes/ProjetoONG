@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package View.TelaCadastroEGerenciomentoVoluntarios.View;
+package View;
 
 /**
  *
@@ -157,7 +157,12 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
 
     private void botaoAcessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAcessoActionPerformed
         // TODO add your handling code here:
-        TelaHome
+       TelaHome telaPrincipal = new TelaHome();
+       //abrindo a tela home
+       telaPrincipal.setVisible(true);
+       
+       //fechando a tela de login
+       dispose();
     }//GEN-LAST:event_botaoAcessoActionPerformed
 
     /**
