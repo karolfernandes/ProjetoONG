@@ -36,6 +36,7 @@ public class TelaHome extends javax.swing.JFrame {
         botapArquivos = new javax.swing.JButton();
         botaoProjetos = new javax.swing.JButton();
         botaoLixeira = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -99,6 +100,13 @@ public class TelaHome extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\curved-arrow-pointing-left (1).png")); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout painelBotoesLayout = new javax.swing.GroupLayout(painelBotoes);
         painelBotoes.setLayout(painelBotoesLayout);
         painelBotoesLayout.setHorizontalGroup(
@@ -118,6 +126,10 @@ public class TelaHome extends javax.swing.JFrame {
                             .addComponent(botaoRelatorios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(painelBotoesLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         painelBotoesLayout.setVerticalGroup(
             painelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,13 +144,15 @@ public class TelaHome extends javax.swing.JFrame {
                 .addComponent(botaoFuncionarios)
                 .addGap(32, 32, 32)
                 .addComponent(botaoRelatorios)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addGap(28, 28, 28)
                 .addComponent(botapArquivos)
-                .addGap(34, 34, 34)
+                .addGap(26, 26, 26)
                 .addComponent(botaoProjetos)
-                .addGap(29, 29, 29)
+                .addGap(26, 26, 26)
                 .addComponent(botaoLixeira)
-                .addGap(44, 44, 44))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout painelPrincipalLayout = new javax.swing.GroupLayout(painelPrincipal);
@@ -147,7 +161,7 @@ public class TelaHome extends javax.swing.JFrame {
             painelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(painelPrincipalLayout.createSequentialGroup()
                 .addComponent(painelBotoes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 499, Short.MAX_VALUE))
+                .addContainerGap(718, Short.MAX_VALUE))
         );
         painelPrincipalLayout.setVerticalGroup(
             painelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,6 +237,12 @@ dispose();
 // TODO add your handling code here:
     }//GEN-LAST:event_botaoLixeiraActionPerformed
 
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+TelaCadastro telaPrincipal = new TelaCadastro();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel2MouseClicked
+
                 
      
     /**
@@ -270,6 +290,7 @@ dispose();
     private javax.swing.JButton botaoRelatorios;
     private javax.swing.JButton botaoRetirada;
     private javax.swing.JButton botapArquivos;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel painelBotoes;
     private javax.swing.JPanel painelPrincipal;
     // End of variables declaration//GEN-END:variables

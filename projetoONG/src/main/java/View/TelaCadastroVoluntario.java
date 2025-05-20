@@ -34,18 +34,19 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
         barraEmail = new javax.swing.JTextField();
         botaoAcesso = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        painelPrincipal.setBackground(new java.awt.Color(153, 255, 153));
+        painelPrincipal.setBackground(new java.awt.Color(0, 51, 0));
 
-        painelCadastro.setBackground(new java.awt.Color(255, 255, 204));
+        painelCadastro.setBackground(new java.awt.Color(204, 255, 255));
 
-        labelEmail.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        labelEmail.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         labelEmail.setForeground(new java.awt.Color(0, 102, 0));
         labelEmail.setText("Digite seu e-mail");
 
-        labelSenha.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        labelSenha.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         labelSenha.setForeground(new java.awt.Color(0, 102, 0));
         labelSenha.setText("Digite sua senha");
 
@@ -62,6 +63,7 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
         });
 
         botaoAcesso.setBackground(new java.awt.Color(0, 102, 0));
+        botaoAcesso.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         botaoAcesso.setText("Acessar");
         botaoAcesso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,14 +71,23 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 10)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
         jLabel1.setText("Cadastre-se");
+
+        jLabel2.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 0, 0));
+        jLabel2.setText("Esqueci minha senha");
 
         javax.swing.GroupLayout painelCadastroLayout = new javax.swing.GroupLayout(painelCadastro);
         painelCadastro.setLayout(painelCadastroLayout);
         painelCadastroLayout.setHorizontalGroup(
             painelCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelCadastroLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(botaoAcesso)
+                .addGap(90, 90, 90))
             .addGroup(painelCadastroLayout.createSequentialGroup()
                 .addGroup(painelCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(painelCadastroLayout.createSequentialGroup()
@@ -87,16 +98,14 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
                             .addGroup(painelCadastroLayout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addGroup(painelCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(barraEmail)
-                                    .addComponent(barraSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)))))
+                                    .addComponent(barraEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE)
+                                    .addComponent(barraSenha)))))
                     .addGroup(painelCadastroLayout.createSequentialGroup()
-                        .addGap(93, 93, 93)
-                        .addGroup(painelCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botaoAcesso)
-                            .addGroup(painelCadastroLayout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel1)))))
-                .addContainerGap(23, Short.MAX_VALUE))
+                        .addGap(40, 40, 40)
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel2)))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         painelCadastroLayout.setVerticalGroup(
             painelCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,11 +118,13 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
                 .addComponent(labelSenha)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(barraSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(18, 18, 18)
                 .addComponent(botaoAcesso)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addGroup(painelCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout painelPrincipalLayout = new javax.swing.GroupLayout(painelPrincipal);
@@ -123,14 +134,14 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
             .addGroup(painelPrincipalLayout.createSequentialGroup()
                 .addGap(505, 505, 505)
                 .addComponent(painelCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(518, Short.MAX_VALUE))
+                .addContainerGap(506, Short.MAX_VALUE))
         );
         painelPrincipalLayout.setVerticalGroup(
             painelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(painelPrincipalLayout.createSequentialGroup()
-                .addGap(156, 156, 156)
+                .addGap(153, 153, 153)
                 .addComponent(painelCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(246, Short.MAX_VALUE))
+                .addContainerGap(213, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -205,6 +216,7 @@ public class TelaCadastroVoluntario extends javax.swing.JFrame {
     private javax.swing.JPasswordField barraSenha;
     private javax.swing.JToggleButton botaoAcesso;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel labelEmail;
     private javax.swing.JLabel labelSenha;
     private javax.swing.JPanel painelCadastro;

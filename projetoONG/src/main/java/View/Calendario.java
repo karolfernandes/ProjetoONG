@@ -88,8 +88,18 @@ public class Calendario extends javax.swing.JFrame {
         );
 
         jButton3.setText("Relatorios");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Retirada de Doações");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("Calendario");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -99,10 +109,25 @@ public class Calendario extends javax.swing.JFrame {
         });
 
         jButton6.setText("Interno e Externo");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Projetos");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("Lixeira");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         botaoVoltar.setText("Voltar");
         botaoVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -178,15 +203,22 @@ public class Calendario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+EntradaDoacoes telaPrincipal = new EntradaDoacoes();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+FuncionariosAtivos telaPrincipal = new FuncionariosAtivos();
+telaPrincipal.setVisible(true);
+dispose();
+// TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+Calendario telaPrincipal = new Calendario();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void botaoVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoVoltarActionPerformed
@@ -194,6 +226,36 @@ TelaHome telaPrincipal = new TelaHome();
 telaPrincipal.setVisible(true);
 dispose();// TODO add your handling code here:
     }//GEN-LAST:event_botaoVoltarActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+RetiradaDoaocoes telaPrincipal = new RetiradaDoaocoes();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+Relatorios telaPrincipal = new Relatorios();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+InternoeExterno telaPrincipal = new InternoeExterno();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+Projetos telaPrincipal = new Projetos();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+Lixeira telaPrincipal = new Lixeira();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments

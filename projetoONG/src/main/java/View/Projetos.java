@@ -122,6 +122,11 @@ public class Projetos extends javax.swing.JFrame {
         jButton7.setText("Projetos");
 
         jButton8.setText("Lixeira");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         botaoVoltar.setText("Voltar");
         botaoVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +215,8 @@ public class Projetos extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void botaoAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdicionarActionPerformed
-     TelaAdicoesProjetos telaPrincipal = new TelaAdicoesProjetos();
+ 
+        TelaAdicoesProjetos telaPrincipal = new TelaAdicoesProjetos();
      telaPrincipal.setVisible(true);
       dispose();   // TODO add your handling code here:
     }//GEN-LAST:event_botaoAdicionarActionPerformed
@@ -220,6 +226,12 @@ TelaHome telaPrincipal = new TelaHome();
 telaPrincipal.setVisible(true);
 dispose();// TODO add your handling code here:
     }//GEN-LAST:event_botaoVoltarActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+Lixeira telaPrincipal = new Lixeira();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments

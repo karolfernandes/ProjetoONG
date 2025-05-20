@@ -103,6 +103,11 @@ public class TelaAdicoesProjetos extends javax.swing.JFrame {
         jLabel3.setText("Adicionar participantes");
 
         jButton1.setText("Ver agenda");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout painelAdicionarParticipantesLayout = new javax.swing.GroupLayout(painelAdicionarParticipantes);
         painelAdicionarParticipantes.setLayout(painelAdicionarParticipantesLayout);
@@ -257,6 +262,13 @@ public class TelaAdicoesProjetos extends javax.swing.JFrame {
     private void botaoAnexarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAnexarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botaoAnexarActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+Projetos telaPrincipal = new Projetos();
+telaPrincipal.setVisible(true);
+dispose();
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

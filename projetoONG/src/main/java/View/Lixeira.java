@@ -27,34 +27,34 @@ public class Lixeira extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        botaoEntradaDoacoes = new javax.swing.JButton();
+        botaoFuncionariosAtivos = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        botaoRelatorios = new javax.swing.JButton();
+        botaoRetiradasDoacoes = new javax.swing.JButton();
+        botaoCalendario = new javax.swing.JButton();
+        botaoInternoeExternos = new javax.swing.JButton();
+        botaoProjetos = new javax.swing.JButton();
+        botaoLixeira = new javax.swing.JButton();
         botaoVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 153));
 
-        jButton1.setText("Entrada de Doações");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botaoEntradaDoacoes.setText("Entrada de Doações");
+        botaoEntradaDoacoes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botaoEntradaDoacoesActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Funcionarios Ativos");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        botaoFuncionariosAtivos.setText("Funcionarios Ativos");
+        botaoFuncionariosAtivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                botaoFuncionariosAtivosActionPerformed(evt);
             }
         });
 
@@ -90,22 +90,47 @@ public class Lixeira extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton3.setText("Relatorios");
-
-        jButton4.setText("Retirada de Doações");
-
-        jButton5.setText("Calendario");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botaoRelatorios.setText("Relatorios");
+        botaoRelatorios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botaoRelatoriosActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Interno e Externo");
+        botaoRetiradasDoacoes.setText("Retirada de Doações");
+        botaoRetiradasDoacoes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoRetiradasDoacoesActionPerformed(evt);
+            }
+        });
 
-        jButton7.setText("Projetos");
+        botaoCalendario.setText("Calendario");
+        botaoCalendario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCalendarioActionPerformed(evt);
+            }
+        });
 
-        jButton8.setText("Lixeira");
+        botaoInternoeExternos.setText("Interno e Externo");
+        botaoInternoeExternos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoInternoeExternosActionPerformed(evt);
+            }
+        });
+
+        botaoProjetos.setText("Projetos");
+        botaoProjetos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoProjetosActionPerformed(evt);
+            }
+        });
+
+        botaoLixeira.setText("Lixeira");
+        botaoLixeira.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoLixeiraActionPerformed(evt);
+            }
+        });
 
         botaoVoltar.setText("Voltar");
         botaoVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -123,14 +148,14 @@ public class Lixeira extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(botaoRelatorios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botaoEntradaDoacoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botaoRetiradasDoacoes, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                            .addComponent(botaoFuncionariosAtivos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botaoInternoeExternos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botaoProjetos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botaoCalendario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botaoLixeira, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(55, 55, 55)
@@ -143,21 +168,21 @@ public class Lixeira extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jButton5)
+                .addComponent(botaoCalendario)
                 .addGap(44, 44, 44)
-                .addComponent(jButton1)
+                .addComponent(botaoEntradaDoacoes)
                 .addGap(40, 40, 40)
-                .addComponent(jButton4)
+                .addComponent(botaoRetiradasDoacoes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(botaoFuncionariosAtivos)
                 .addGap(44, 44, 44)
-                .addComponent(jButton3)
+                .addComponent(botaoRelatorios)
                 .addGap(48, 48, 48)
-                .addComponent(jButton6)
+                .addComponent(botaoInternoeExternos)
                 .addGap(44, 44, 44)
-                .addComponent(jButton7)
+                .addComponent(botaoProjetos)
                 .addGap(54, 54, 54)
-                .addComponent(jButton8)
+                .addComponent(botaoLixeira)
                 .addGap(18, 18, 18)
                 .addComponent(botaoVoltar)
                 .addGap(30, 30, 30))
@@ -180,23 +205,60 @@ public class Lixeira extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void botaoEntradaDoacoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntradaDoacoesActionPerformed
+EntradaDoacoes telaPrincipal = new EntradaDoacoes();
+telaPrincipal.setVisible(true);
+dispose();
+// TODO add your handling code here:
+    }//GEN-LAST:event_botaoEntradaDoacoesActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void botaoFuncionariosAtivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoFuncionariosAtivosActionPerformed
+FuncionariosAtivos telaPrincipal = new FuncionariosAtivos();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_botaoFuncionariosAtivosActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void botaoCalendarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCalendarioActionPerformed
+Calendario telaPrincipal = new Calendario();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_botaoCalendarioActionPerformed
 
     private void botaoVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoVoltarActionPerformed
 TelaHome telaPrincipal = new TelaHome();
 telaPrincipal.setVisible(true);
 dispose();// TODO add your handling code here:
     }//GEN-LAST:event_botaoVoltarActionPerformed
+
+    private void botaoRetiradasDoacoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoRetiradasDoacoesActionPerformed
+RetiradaDoaocoes telaPrincipal = new RetiradaDoaocoes();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_botaoRetiradasDoacoesActionPerformed
+
+    private void botaoRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoRelatoriosActionPerformed
+Relatorios telaPrincipal = new Relatorios();
+telaPrincipal.setVisible(true); 
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_botaoRelatoriosActionPerformed
+
+    private void botaoInternoeExternosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoInternoeExternosActionPerformed
+InternoeExterno telaPrincipal = new InternoeExterno();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_botaoInternoeExternosActionPerformed
+
+    private void botaoProjetosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoProjetosActionPerformed
+Projetos telaPrincipal = new Projetos();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_botaoProjetosActionPerformed
+
+    private void botaoLixeiraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLixeiraActionPerformed
+Lixeira telaPrincipal = new Lixeira();
+telaPrincipal.setVisible(true);
+dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_botaoLixeiraActionPerformed
 
     /**
      * @param args the command line arguments
@@ -249,15 +311,15 @@ dispose();// TODO add your handling code here:
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botaoCalendario;
+    private javax.swing.JButton botaoEntradaDoacoes;
+    private javax.swing.JButton botaoFuncionariosAtivos;
+    private javax.swing.JButton botaoInternoeExternos;
+    private javax.swing.JButton botaoLixeira;
+    private javax.swing.JButton botaoProjetos;
+    private javax.swing.JButton botaoRelatorios;
+    private javax.swing.JButton botaoRetiradasDoacoes;
     private javax.swing.JButton botaoVoltar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
