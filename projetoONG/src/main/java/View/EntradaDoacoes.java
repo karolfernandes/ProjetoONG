@@ -44,8 +44,9 @@ public class EntradaDoacoes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 204, 0));
 
+        jButton1.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton1.setText("Entrada de Doações");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,6 +54,7 @@ public class EntradaDoacoes extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton2.setText("Funcionarios Ativos");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +62,7 @@ public class EntradaDoacoes extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(102, 255, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 0));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -75,7 +77,7 @@ public class EntradaDoacoes extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jButton9.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
+        jButton9.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton9.setText("Cadastrar");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,13 +106,16 @@ public class EntradaDoacoes extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(jButton9)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
 
+        jButton3.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton3.setText("Relatorios");
 
+        jButton4.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton4.setText("Retirada de Doações");
 
+        jButton5.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton5.setText("Calendario");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,10 +123,13 @@ public class EntradaDoacoes extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton6.setText("Interno e Externo");
 
+        jButton7.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton7.setText("Projetos");
 
+        jButton8.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N
         jButton8.setText("Lixeira");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -133,7 +141,7 @@ public class EntradaDoacoes extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -152,17 +160,17 @@ public class EntradaDoacoes extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(40, 40, 40)
                 .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addGap(28, 28, 28)
                 .addComponent(jButton2)
-                .addGap(44, 44, 44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton3)
-                .addGap(48, 48, 48)
+                .addGap(34, 34, 34)
                 .addComponent(jButton6)
                 .addGap(44, 44, 44)
                 .addComponent(jButton7)
-                .addGap(54, 54, 54)
+                .addGap(31, 31, 31)
                 .addComponent(jButton8)
-                .addGap(71, 71, 71))
+                .addGap(94, 94, 94))
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
